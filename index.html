@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="mylinks">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Angular with Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<div class="container-fluid">
+<div class="row">
+<div class="clearfix">&nbsp;</div>
+<div class="col-md-offset-2 col-md-8" ng-controller="linksContrl">
+
+<div class="col-md-12">
+<nav class="navbar navbar-default">
+        <div class="nav nav-justified navbar-nav">
+ 
+            <form class="navbar-form navbar-search" role="search">
+                <div class="input-group" style="width: 100%;">
+        
+                    <input type="text" ng-model="name" placeholder="Search here to get link.." class="form-control input-lg" >
+                
+                    <div class="input-group-btn ">
+					
+	<select ng-model="type" class="form-control input-lg" >
+	<option value="">-- Sort All Categories --</option> 
+	<option value="Angularjs">Angularjs</option>
+     <option value="ui bootstrap">Bootstrap</option>
+      <option value="jquery">JQuery</option> 
+    </select>				
+                    </div>
+                </div>  
+            </form>   
+         
+        </div>
+    </nav>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+<div class="col-md-12">
+  <span class="bg-info badge">Number of Links: {{links.length}}</span>
+</div>
+<div class="clearfix">&nbsp;</div>
+
+<div class="col-md-12">
+
+    <div class="qa-message-list" id="wallmessages">
+    				<div class="message-item" id="m16" ng-show="links" ng-repeat="link in links | filter: name | filter : type | orderBy:'type'">
+						<div class="message-inner">
+							<div class="message-head clearfix">
+								<div class="message-icon pull-left"><a href="{{link.url}}" target="_blank"><i class="glyphicon glyphicon-check"></i></a></div>
+								<div class="user-detail">
+									<h5 class="handle">{{link.name}}</h5>
+                                    <div class="post-type">
+										<p>{{link.type}}</p>
+									</div>
+
+								</div>
+							</div>
+							<div class="qa-message-content">
+								<p>{{link.description}}</p>
+								<div class="clearfix">&nbsp;</div>
+								<a href="{{link.url}}" class="btn btn-danger pull-right link-btn" target="_blank"><span class="glyphicon glyphicon-chevron-right"></span></a>
+							</div>
+			            </div>   
+					</div>
+					<div ng-show="!links">
+					<h1>No Links Found !!!!</h1>
+					</div>
+	</div>				
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script> 
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>	
+	<script>
+ 
+$(function(){
+    
+    $(".input-group-btn .dropdown-menu li a").click(function(){
+
+        var selText = $(this).html();
+    
+        //working version - for single button //
+       //$('.btn:first-child').html(selText+'<span class="caret"></span>');  
+       
+       //working version - for multiple buttons //
+       $(this).parents('.input-group-btn').find('.btn-search').html(selText);
+
+   });
+
+});	
+	</script>
+</html>

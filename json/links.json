@@ -1,0 +1,71 @@
+[
+    {
+        "type": "Jquery", 
+        "name": "MATCH HEIGHTS ON DIFFERENT ROWS (Same height div's)",		
+        "url": "https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all-the-same-height",
+		"description":"Match heights on different rows. This is pretty straight forward and simply uses JavaScript to match heights of the columns. "
+
+    },
+   {
+        "type": "Angularjs", 
+        "name": "THE HTML5 VIDEO PLAYER FOR ANGULARJS",		
+        "url": "http://www.videogular.com/",
+		"description":"FUTURISTIC VIDEO APPLICATIONS FOR ANGULARJS. Videogular is a video application framework for desktop and mobile powered by AngularJS"		
+    },	
+   {
+        "type": "Angularjs", 
+        "name": "apiNG",		
+        "url": "https://aping.readme.io/",
+		"description":"apiNG is an AngularJS directive that enables you to receive and display data from one or more sources. The data can be aggregated, limited and ordered. The complete setup is dead simple, just by adding data-attributes to your html"		
+    }, 	
+   {
+        "type": "Angularjs", 
+        "name": "AngularJS-Learning",		
+        "url": "https://github.com/jmcunningham/AngularJS-Learning",
+		"description":"A bunch of links to blog posts, articles, videos, etc for learning AngularJS"		
+    },	
+   {
+        "type": "Angularjs", 
+        "name": "LEARN ANGULARJS ONLINE",		
+        "url": "https://www.codementor.io/learn-angularjs",
+		"description":"With AngularJS gaining popularity for its ability to build powerful and dynamic web applications, more and more employers are looking for web developers with AngularJS skills. If you're just starting out with web development, AngularJS is a great framework to learn first."		
+    },
+   {
+        "type": "Angularjs", 
+        "name": "ROCKET SCIENCE for JAVASCRIPT SEO",		
+        "url": "https://prerender.io/",
+		"description":"Allows your Javascript website to be crawled perfectly by search engines."		
+    },	
+    {
+        "type": "Angularjs", 
+        "name": "Angularjs admin theme",		
+        "url": "http://demo.oxygenna.com/triangular",
+		"description":"Triangular angular theme its paid theme. its for reference.."		
+    },
+    {
+        "type": "Angular2", 
+        "name": "Angular2 demos",		
+        "url": "http://www.primefaces.org/primeng/",
+		"description":"PrimeNG is a collection of rich UI components for AngularJS2"		
+    },
+
+    {
+        "type": "Angularjs", 
+        "name": "Learn Angular",		
+        "url": "http://www.angularjsbook.com/angular-basics/chapters/",
+		"description":" COVERING DIRECTIVES, MODULES, SERVICES, CONTROLLERS, ROUTING, AND MORE"		
+    },		
+    {
+        "type": "Bootstrap", 
+        "name": "bootstrap-tree",		
+        "url": "https://github.com/jhfrench/bootstrap-tree",
+		"description":"JavaScript and LESS/CSS for creating Bootstrap-themed trees (to display hierarchical data)."		
+    },
+    {
+        "type": "Angular2", 
+        "name": "Learn Angular2",		
+        "url": "http://learnangular2.com/",
+		"description":" Angular 2 is the next version of Google’s massively popular MV* framework for building complex applications in the browser (and beyond)."		
+    }	
+]
+
